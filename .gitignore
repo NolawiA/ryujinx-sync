@@ -1,0 +1,11 @@
+# save (only for source code repo, delete otherwise)
+# save/
+
+# temporary files
+*.tmp
+*.temp
+temp/
+
+# misc
+Contents/
+*.log
