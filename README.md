@@ -90,6 +90,7 @@ Setup is complete! You can choose from any method below or just run `./ryujinx-s
 ```
 5. (Optional) Use `ryujinx_logo.png` and `ryujinx_banner.png` from `images/` to decorate by right clicking the banner after exiting properties
 > Note: .png files work on all steam image properties
+> Note: press guide button + R2 on controller to refocus steam after close if going for console/controller only experience
 
 #### Windows Shortcut (fastest and if you don't need controller support)
 
