@@ -1,4 +1,7 @@
+```
 #!/bin/bash
+
+set -e
 
 GIT_REPO_PATH="/c/Program Files/Ryujinx/ryujinx-sync"
 GIT_REPO_SAVE="/c/Program Files/Ryujinx/ryujinx-sync/save"
@@ -22,6 +25,8 @@ warn() {
 error() {
     echo -e "[Ryujinx Sync]${RED}[ERROR]${NC} $1\n"
 }
+
+trap 'error "Error trapped, read message above and re-run after fixing"; sleep 7; exit 1' ERR
 
 pull_saves() {
     log "Pulling latest saves from GitHub..."
@@ -93,4 +98,5 @@ log "--- Ryujinx Closed ---"
 
 push_saves
 log "--- Save Sync Complete ---"
-sleep 5
+sleep 2
+```
